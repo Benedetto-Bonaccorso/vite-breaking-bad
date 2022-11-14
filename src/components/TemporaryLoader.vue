@@ -1,18 +1,16 @@
 
 <script>
     export default {
-        name: "SiteHeader"
+        name: "temporaryloader"
     }
 </script>
 
 <template>
-    <header id="site-header">
+    <header id="temporary-loader">
         
     </header>
 </template>
 
 <style lang="scss">
-
     
-
 </style>

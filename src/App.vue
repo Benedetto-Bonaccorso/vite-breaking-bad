@@ -2,11 +2,11 @@
   import axios from 'axios';
   import TemporaryLoader from "./components/TemporaryLoader.vue"
   import AppMain from "./components/AppMain.vue"
-  import {state} from "./state.js"
+  import { state } from "./state.js"
+  import CharactersList from './components/CharactersList.vue';
 
   export default{
     name: "app",
-    characters: [],
     components:{
       TemporaryLoader,
       AppMain
@@ -14,29 +14,26 @@
     data() {
       return {
         state,
+        url: "https://www.breakingbadapi.com/api/characters"
       }
-  },
-  methods: {
-    callApi(url){
-
-      axios.get(url)
-
-        .then(response => {
-          console.log(response)
-          this.state.characters = response.data.results
-          this.state.info = response.data.info
-        })
-    }
-  }
+    },
+  
 }
+
 
 </script>
 
 <template>
   
 
-  <!--main-->
+  <!--
 
+  <div class="prova">
+    <p v-for="character in state.characters">
+      {{character.name}}
+    </p>
+  </div>
+  -->
   <AppMain />
 
   <footer id="site-footer">

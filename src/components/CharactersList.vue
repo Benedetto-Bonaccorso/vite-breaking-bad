@@ -1,18 +1,40 @@
 <script>
+    import axios from 'axios';
     import CharacterTemplate from "./CharacterTemplate.vue"
     import {state} from "../state.js"
 
     export default{
         name: "CharactersList",
         components: {
-            CharacterTemplate
+            CharacterTemplate,
         },
         data(){
             return{
-                state
+                state,
+                url: "https://www.breakingbadapi.com/api/characters",
+                characters: null
             }
-        }
-    }
+        },
+        methods: {
+    
+            callApi(url){
+
+                axios.get(url)
+
+                .then(response => {
+                    console.log(response)
+                    this.state.characters = response.data
+                    this.state.info = response.data.info
+                    console.log(this.state.characters)
+                    console.log(response.data)
+          })
+    },
+  },
+  mounted() {
+    this.callApi(this.url)
+  }
+
+}
 
 </script>
 
