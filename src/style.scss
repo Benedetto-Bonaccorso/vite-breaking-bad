@@ -6,8 +6,25 @@
   box-sizing: border-box;
 }
 
+img{
+  max-width: 100%;
+}
+
 body{
   background-color:bisque;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.righe{
+  display: flex;
+  width: 100vw;
+  overflow-x: scroll;
+}
+
+.character-card{
+  height: 20vw;
+  width: 10vw;
+  background-color: white;
+  border: 5px solid black;
+  padding: 1rem;
+}

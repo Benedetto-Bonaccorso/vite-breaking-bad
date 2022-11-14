@@ -26,19 +26,13 @@
 <template>
   
 
-  <!--
+  <h2>breaking bad API</h2>
 
-  <div class="prova">
-    <p v-for="character in state.characters">
-      {{character.name}}
-    </p>
-  </div>
-  -->
+
+  <h4>Found 62 characters:</h4>
   <AppMain />
 
-  <footer id="site-footer">
-    
-  </footer>
+
 </template>
 
 <style lang="scss">

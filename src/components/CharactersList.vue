@@ -40,11 +40,9 @@
 
 <template>
 
-    <div class="container">
-        <h1>characters</h1>
-        <div class="row">
+    <div class="righe">
+
             <CharacterTemplate :character="character" v-for="character in state.characters" />
-        </div>
     </div>
 
 </template>
