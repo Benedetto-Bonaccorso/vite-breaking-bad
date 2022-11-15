@@ -28,6 +28,8 @@
 
     <h2>breaking bad API</h2>
 
+    <h4 v-if="state.filteredCharacters.length != 0">found {{state.filteredCharacters.length}} Characters:</h4>
+
   </div>
   <AppMain />
 
