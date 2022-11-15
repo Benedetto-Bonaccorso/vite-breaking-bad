@@ -24,13 +24,12 @@
 
 <template>
   
+  <div class="text-center">
 
-  <h2>breaking bad API</h2>
+    <h2>breaking bad API</h2>
 
-
-  <h4>Found 62 characters:</h4>
+  </div>
   <AppMain />
-
 
 </template>
 

@@ -5,5 +5,7 @@ export const state = reactive ({
   characters: null,
   info: null,
   error: null,
-  searchText: ""
+  searchText: "",
+  category: "",
+  filteredCharacters: []
 })

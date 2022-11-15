@@ -15,17 +15,10 @@ body{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.righe{
-  display: flex;
-  height: 40vw;
-  width: 100vw;
-  overflow-x: scroll;
+.bg-gray{
+  background-color: #2e3a46;
 }
 
 .character-card{
-  height: auto;
-  width: 20vw;
-  background-color: white;
-  border: 5px solid black;
-  padding: 1rem;
+  border: 5px solid white;
 }

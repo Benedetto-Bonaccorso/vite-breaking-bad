@@ -36,9 +36,16 @@
 
 <template>
 
-    <div class="righe">
+    <div class="row">
+            <CharacterTemplate 
+            :character="character" v-if="state.filteredCharacters == []" v-for="character in state.characters" 
+            class="col-4 bg-gray text-white"
+            />
 
-            <CharacterTemplate :character="character" v-for="character in state.characters" />
+            <CharacterTemplate 
+            :character="character" v-else v-for="character in state.filteredCharacters" 
+            class="col-4 bg-gray text-white"
+            />
     </div>
 
 </template>
