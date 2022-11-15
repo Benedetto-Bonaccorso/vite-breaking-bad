@@ -11,22 +11,18 @@
         data(){
             return{
                 state,
-                url: "https://www.breakingbadapi.com/api/characters",
                 characters: null
             }
         },
         methods: {
     
-            callApi(url){
+            callApi(){
 
-                axios.get(url)
+                axios.get(state.url)
 
                 .then(response => {
-                    console.log(response)
                     this.state.characters = response.data
                     this.state.info = response.data.info
-                    console.log(this.state.characters)
-                    console.log(response.data)
           })
     },
   },

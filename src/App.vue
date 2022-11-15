@@ -14,7 +14,6 @@
     data() {
       return {
         state,
-        url: "https://www.breakingbadapi.com/api/characters"
       }
     },
   
